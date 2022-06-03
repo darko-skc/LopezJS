@@ -1,0 +1,204 @@
+.game-on-sale {
+    border-bottom: 0.1px rgba(255, 255, 255,0.2) solid;  
+    display: grid;
+    grid-template-columns: 0.6fr 2.5fr;
+    grid-template-rows: 3.1fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "game-on-sale__img game-on-sale__frontpage"
+      "game-on-sale__img game-on-sale__option";
+    padding: 0.8rem;
+    padding-bottom: 2rem;
+  }
+  
+.game-on-sale__img { 
+    grid-area: game-on-sale__img;
+    padding: 0.8rem; 
+}
+  
+.game-on-sale__img--container {
+    width: 170px;
+    height: 110px;
+    margin-bottom: 0.8rem;
+}
+
+.game-on-sale__img--container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+.game-on-sale__img--about {
+    width: 170px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: rgba(34, 127, 94, 0.3);
+    margin-top: 2.3rem;
+    transition: 0.5s;
+}
+
+.game-on-sale__img--about:hover {
+    background-color: rgba(34, 127, 94, 0.2);
+}
+
+.game-on-sale__img--about a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(38, 149, 110);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.game-on-sale__img--about a:hover {
+    color: rgb(50, 182, 136)
+}
+
+.game-on-sale__img--about span {
+    margin-left: 0.5rem;
+}
+
+
+
+.game-on-sale__frontpage {
+    grid-area: game-on-sale__frontpage; 
+    margin: 0.8rem 0; 
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.game-on-sale__frontpage--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.game-on-sale__frontpage--buttom {
+    position: absolute;
+    top: 87%;
+    left: 5%;
+    width: 110px;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.game-on-sale__frontpage--buttom:hover{
+    background-color: rgba(255, 255, 255,0.6);
+}
+
+.game-on-sale__frontpage--buttom a {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.3rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.game-on-sale__frontpage--buttom i {
+    color: rgb(34, 127, 94);
+}
+
+.game-on-sale__frontpage--buttom span {
+    color: rgb(255, 255, 255);
+}
+
+.game-on-sale__option--name {
+    padding: 1rem;
+}
+
+.game-on-sale__option--name h2 {
+    color: rgb(255, 255, 255);
+}
+
+.game-on-sale__option--name i {
+    margin-top: 0.5rem;
+    color: rgb(234, 152, 0);
+    display: inline-block;
+}
+
+.game-on-sale__option--name p {
+    color: rgb(162, 162, 162);
+    margin-left: 0.5rem;
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.game-on-sale__option { 
+    grid-area: game-on-sale__option;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+  
+
+.game-on-sale__content--version {
+    width: 150px;
+    height: 60px;
+    padding: 0 1rem;
+    background-color: rgba(14, 14, 14,0.8);
+    border-radius: 13px;
+}
+
+.game-on-sale__version {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 13px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.game-on-sale__option--info {
+    width: 300px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+}
+
+.game-on-sale__option--info span {
+    font-size: 18px;
+}
+
+.game-on-sale__option--info--cart {
+    width: 145px;
+    height: 60px;
+    border-radius: 13px;
+    background-color: rgb(40, 87, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.game-on-sale__option--info--cart *{
+    display: inline-block;
+}
+
+.game-on-sale__option--info--cart p {
+    margin-left: 0.8rem;
+}
+
+.game-on-sale__option--info--heart {
+    width: 55px;
+    height: 55px;
+    border-radius: 13px;
+    background-color: rgba(14, 14, 14,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6755f58db9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>E-Game | Tienda de videojuegos online</title>
+</head>
+<body>
+    <div class="grid-container">
+
+
+
+        <div class="side-bar">
+            <div class="side-bar__logo">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="side-bar__options">
+    
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-brands fa-xbox"></i></li>
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-solid fa-gamepad"></i></li>
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-solid fa-trophy"></i></li>
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-solid fa-gift"></i></li>
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-solid fa-cube"></i></li>
+                    <li class="side-bar__options--li"><i class="side-bar__options--li--i fa-regular fa-folder-open"></i></li>
+                
+            </div>
+            <div class="side-bar__config">
+                <li class="side-bar__config--li"><i class="side-bar__config--li--i fa-solid fa-gear"></i></li>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <div class="menu-bar">
+            <div class="menu-bar__option">
+                <li class="menu-bar__list">Store</li>
+                <li class="menu-bar__list">New Games</li>
+                <li class="menu-bar__list">News</li>
+                <li class="menu-bar__list">Community</li>
+            </div>
+            <div class="menu-bar__search">
+                <input type="text" name="" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="menu-bar__user">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <div class="menu-bar__account">
+                    <div>
+                        <span>User</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="game-on-sale">
+            <div class="game-on-sale__img">
+                <div class="game-on-sale__img--container">
+                    <img src="./image/farcry6/gameplay3.webp" alt="">
+                </div>
+                <div class="game-on-sale__img--container">
+                    <img src="./image/farcry6/gameplay1.jpeg" alt="">
+                </div>
+                <div class="game-on-sale__img--container">
+                    <img src="./image/farcry6/gameplay2.jpeg" alt="">
+                </div>
+                <div class="game-on-sale__img--container">
+                    <img src="./image/farcry6/gameplay5.webp" alt="">
+                </div>
+                <div class="game-on-sale__img--container">
+                    <img src="./image/farcry6/gameplay4.jpeg" alt="">
+                </div>
+                <div class="game-on-sale__img--about">
+                    <a href="#">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>About Game</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-on-sale__frontpage">
+                
+                <img class="game-on-sale__frontpage--img" src="./image/farcry6/frontpage.jpeg" alt="">
+    
+                <div class="game-on-sale__frontpage--buttom">
+                    <a href="#">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Trailer</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="game-on-sale__option">
+                
+                <div class="game-on-sale__option--name">
+                    <h2>Far Cry 6</h2>
+                    <i class="fa-solid fa-star"><p>5.0</p></i>
+                </div>
+
+                <div class="game-on-sale__content--version">
+                    <select name="version" class="game-on-sale__version">
+                        <option value="standard">Standard</option>
+                        <option value="gold">Gold</option>
+                        <option value="ultimate">Ultimate</option>
+                      </select>
+                </div>
+
+                <div class="game-on-sale__option--info">
+                    <span>$50</span>
+                    <div class="game-on-sale__option--info--cart"><i class="fa-solid fa-basket-shopping"><p>Add to Cart</p></i></div>
+                    <div class="game-on-sale__option--info--heart"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="popular-game">
+            <h2 style="color: rgb(255, 255, 255);">Carrito Beta</h2>
+            <div class="beta-cart-box">
+                <div class="beta-cart-box--title">
+                    <span>Game</span>
+                    <span>amount</span>
+                    <span>Price</span>
+                </div>
+            </div>
+            <div id="beta-box">
+
+            </div>
+            <div id="total-price-box">
+
+            </div>
+        </div>
+
+
+        <div class="game-recommendations" id="game-recommendations">
+            
+            <div class="game-recommendations--title"><h2>Similar</h2></div>
+    
+
+        </div>
+
+
+        <!-- Dibujando la estructura de los juegos recomendados - similares -->
+        <template id="template-recommendations-box">
+            <div class="game-recommendations--content" >
+                <div class="game-recommendations--content--img">
+                    <img id="game-recommendations-img" src="./image/farcry1/wallpaper.webp">
+                </div>
+            
+                <div class="game-recommendations--content--name">
+                    <div class="game-recommendations--content--info">
+                        <h3 id="game-recommendations--content--info--name">Game</h3>
+                        <div class="game-recommendations--content--info--version">
+                            <i class="fa-solid fa-star"><p id="game-recommendations--content--info--name--valoration">5.0</p> -</i>
+                            <span id="game-recommendations--version">Standar<span>
+                        </div>
+                    </div>
+
+                    <div class="game-recommendations--content--cart">
+                        <div class="game-recommendations--content--price"><p id="game-recommendations--content--price--text">$50</p></div>
+                        <div class="game-recommendations--content--buttom cart-buttom" data-id="1"><i class="fa-solid fa-basket-shopping cart-buttom" data-id="1"></i></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!--Dibujando la estructura del carrito-->
+        <template id="template-beta-box">
+                    <div class="beta-cart-box--game">
+                        <span id="beta-cart-box--name">Far cry</span>
+                        <span id="beta-cart-box--amount"">1</span>
+                        <span id="beta-cart-box--price">25.996</span>
+                    </div>
+        </template>
+        <template id="template-price-box">
+            <div class="beta-cart-box--price" id="beta-cart-box--price">
+                <span>Total</span>
+                <span id="beta-price">15.00</span>
+            </div>
+        </template>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "id" : 1,
+        "name" : "Far Cry 6",
+        "price_standard" : 59.99,
+        "price_gold" : 109.99,
+        "price_ultimate" : 119.99,
+        "valoration" : 5.0,
+        "frontpage_img" : "./image/farcry6/frontpage.jpeg"
+    },
+    {
+        "id" : 2,
+        "name" : "Far Cry 5",
+        "price_standard" : 29.99,
+        "price_gold" : 89.99,
+        "price_ultimate" : 109.99,
+        "valoration" : 4.5,
+        "frontpage_img" : "./image/farcry5/frontpage.jpeg"
+    },
+    {
+        "id" : 3,
+        "name" : "Far Cry 4",
+        "price_standard" : 29.99,
+        "price_gold" : 59.99,
+        "price_ultimate" : 89.99,
+        "valoration" : 4.6,
+        "frontpage_img" : "./image/farcry4/frontpage.jpeg"
+    },
+    {
+        "id" : 4,
+        "name" : "Far Cry 3",
+        "price_standard" : 19.99,
+        "price_gold" : 39.99,
+        "valoration" : 4.6,
+        "frontpage_img" : "./image/farcry3/frontpage.jpeg"
+    },
+    {
+        "id" : 5,
+        "name" : "Far Cry 2",
+        "price_standard" : 9.99,
+        "valoration" : 3.5,
+        "frontpage_img" : "./image/farcry2/frontpage.jpeg"
+    },
+    {
+        "id" : 6,
+        "name" : "Far Cry 1",
+        "price_standard" : 9.99,
+        "valoration" : 5.0,
+        "frontpage_img" : "./image/farcry1/frontpage.webp"
+    }
+]

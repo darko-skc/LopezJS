@@ -1,0 +1,35 @@
+.popular-game {
+    padding: 5rem;
+}
+
+.beta-cart-box {
+    margin-top: 3rem;
+}
+
+.beta-cart-box--title , .beta-cart-box--game, .beta-cart-box--price{
+    width: 400px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(14, 14, 14,0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.beta-cart-box--title {
+    background-color: rgba(34, 127, 94, 0.3);
+}
+
+.beta-cart-box--game span , .beta-cart-box--title span{
+    width: 100px;
+}
+
+.beta-cart-box--price {
+    justify-content: end;
+    padding-right: 2rem;
+}
+
+.beta-cart-box--price span {
+    padding-left: 1rem;
+}
