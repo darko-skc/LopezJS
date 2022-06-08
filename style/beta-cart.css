@@ -6,7 +6,7 @@
     margin-top: 3rem;
 }
 
-.beta-cart-box--title , .beta-cart-box--game, .beta-cart-box--price{
+.beta-cart-box--title , .beta-cart-box--game, .beta-cart-box--price, #total-price-box{
     width: 400px;
     height: 30px;
     color: rgb(255, 255, 255);

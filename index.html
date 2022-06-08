@@ -65,7 +65,7 @@
 
 
 
-        <div class="game-on-sale">
+        <div class="game-on-sale" id="game-on-sale">
             <div class="game-on-sale__img">
                 <div class="game-on-sale__img--container">
                     <img src="./image/farcry6/gameplay3.webp" alt="">
@@ -95,7 +95,7 @@
                 <img class="game-on-sale__frontpage--img" src="./image/farcry6/frontpage.jpeg" alt="">
     
                 <div class="game-on-sale__frontpage--buttom">
-                    <a href="#">
+                    <a href="https://www.youtube.com/watch?v=tSDMwngdkF4" target="_blank">
                     <i class="fa-solid fa-film"></i>
                     <span>Trailer</span>
                     </a>
@@ -106,8 +106,8 @@
             <div class="game-on-sale__option">
                 
                 <div class="game-on-sale__option--name">
-                    <h2>Far Cry 6</h2>
-                    <i class="fa-solid fa-star"><p>5.0</p></i>
+                    <h2 class="game_on_sale_name" id="game-cart-name">Far Cry 6</h2>
+                    <i class="fa-solid fa-star"><p class="game_on_sale_valoration" id="game-cart-valoration">5.0</p></i>
                 </div>
 
                 <div class="game-on-sale__content--version">
@@ -119,8 +119,8 @@
                 </div>
 
                 <div class="game-on-sale__option--info">
-                    <span>$50</span>
-                    <div class="game-on-sale__option--info--cart"><i class="fa-solid fa-basket-shopping"><p>Add to Cart</p></i></div>
+                    <span class="game_on_sale_price" id="game-cart-price">$50</span>
+                    <div class="game-on-sale__option--info--cart buttom-on-sale cart-buttom" data-id="1" id="game-cart-buttom"><i id="game-cart-buttom" class="cart-buttom fa-solid fa-basket-shopping buttom-on-sale" data-id="1"> Add cart</i></div>
                     <div class="game-on-sale__option--info--heart"><i class="fa-regular fa-heart"></i></div>
                 </div>
             </div>
@@ -143,7 +143,8 @@
 
             </div>
             <div id="total-price-box">
-
+                    <span>Total</span>
+                    <span>00.00</span>
             </div>
         </div>
 
@@ -160,21 +161,21 @@
         <template id="template-recommendations-box">
             <div class="game-recommendations--content" >
                 <div class="game-recommendations--content--img">
-                    <img id="game-recommendations-img" src="./image/farcry1/wallpaper.webp">
+                    <img class="game-recommendations-img" src="./image/farcry1/wallpaper.webp">
                 </div>
             
                 <div class="game-recommendations--content--name">
                     <div class="game-recommendations--content--info">
-                        <h3 id="game-recommendations--content--info--name">Game</h3>
+                        <h3 class="game-recommendations--content--info--name" id="game-cart-name">Game</h3>
                         <div class="game-recommendations--content--info--version">
-                            <i class="fa-solid fa-star"><p id="game-recommendations--content--info--name--valoration">5.0</p> -</i>
+                            <i class="fa-solid fa-star"><p class="game-recommendations--content--info--name--valoration" id="game-cart-valoration">5.0</p> -</i>
                             <span id="game-recommendations--version">Standar<span>
                         </div>
                     </div>
 
                     <div class="game-recommendations--content--cart">
-                        <div class="game-recommendations--content--price"><p id="game-recommendations--content--price--text">$50</p></div>
-                        <div class="game-recommendations--content--buttom cart-buttom" data-id="1"><i class="fa-solid fa-basket-shopping cart-buttom" data-id="1"></i></div>
+                        <div class="game-recommendations--content--price"><p class="game-recommendations--content--price--text" id="game-cart-price">$50</p></div>
+                        <div class="game-recommendations--content--buttom cart-buttom" data-id="1" id="game-cart-buttom"><i id="game-cart-buttom" class="fa-solid fa-basket-shopping cart-buttom" data-id="1"></i></div>
                     </div>
                 </div>
             </div>
@@ -188,12 +189,8 @@
                         <span id="beta-cart-box--price">25.996</span>
                     </div>
         </template>
-        <template id="template-price-box">
-            <div class="beta-cart-box--price" id="beta-cart-box--price">
-                <span>Total</span>
-                <span id="beta-price">15.00</span>
-            </div>
-        </template>
+        <!--Dibujando la suma del carrito-->>
+        
 
     <script src="./scripts/app.js"></script>
 </body>

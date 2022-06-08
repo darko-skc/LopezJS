@@ -180,17 +180,16 @@
     border-radius: 13px;
     background-color: rgb(40, 87, 209);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 1rem;
+    
 }
 
-.game-on-sale__option--info--cart *{
-    display: inline-block;
-}
-
-.game-on-sale__option--info--cart p {
-    margin-left: 0.8rem;
+.game-on-sale__option--info--cart:hover {
+    cursor: pointer;
+    color: rgb(196, 196, 196);
+    background-color: rgb(14, 63, 189);
 }
 
 .game-on-sale__option--info--heart {
