@@ -110,6 +110,20 @@ const add_cart = game_info => {
     /*Usamos spread para que carrito en su propiedad "id" va a ser una copia de add_game*/
     cart[add_game.id] = {...add_game}
 
+    
+    const Toast = Swal.mixin({
+        toast: false,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 2000,
+        background : '#545454',
+        color : '#fff',
+    })
+      
+    Toast.fire({
+        icon: 'success',
+        title: 'Su producto fue agregado al carrito'
+    })
 
     templates_cart_beta();
     templates_price_beta();

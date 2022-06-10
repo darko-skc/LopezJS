@@ -40,6 +40,10 @@ body {
     backdrop-filter: blur(5px);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body::before{
   content: "";
   position: absolute;
