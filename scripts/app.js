@@ -6,6 +6,7 @@ const templates_recommendations_box = document.getElementById('template-recommen
 const template_beta_box = document.getElementById('template-beta-box').content
 const fragments = document.createDocumentFragment()
 const game_on_sale = document.getElementById('game-on-sale')
+const button_price_item = document.getElementById('button-price-item')
 
 
 
@@ -200,4 +201,24 @@ const template_game_on_sale = (data) =>{
 
 game_on_sale.addEventListener('click', (e) => {
     cart_button(e)
+})
+
+button_price_item.addEventListener('click', () => {
+    localStorage.removeItem('cart')
+    const Toast = Swal.mixin({
+        toast: false,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 2000,
+        background : '#545454',
+        color : '#fff',
+    })
+      
+    Toast.fire({
+        icon: 'success',
+        title: 'Su compra fue exitosa'
+    })
+    setTimeout(() => {
+        location.reload()
+    },2000)
 })
